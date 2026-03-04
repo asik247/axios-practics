@@ -1,4 +1,5 @@
 import React from 'react';
+import { BarChart } from 'recharts';
 
 const MyBar = ({singleData}) => {
     console.log(singleData);
@@ -16,8 +17,9 @@ const MyBar = ({singleData}) => {
     return (
         <div>
             <div>
-               {/* <h1>{name}</h1>
-               <p>{section}</p> */}
+              <BarChart width={500} height={500} data={}>
+
+              </BarChart>
             </div>
         </div>
     );
