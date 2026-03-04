@@ -1,4 +1,5 @@
 import React, { use } from 'react';
+import MyBar from './MyBar';
 
 const MyBarChart = ({promiseDataAxios}) => {
     const studntsDatas = use(promiseDataAxios)
@@ -8,7 +9,7 @@ const MyBarChart = ({promiseDataAxios}) => {
     return (
         <div>
             {
-                myDatas.map(singleData=>{console.log(singleData)})
+                myDatas.map(singleData=><MyBar singleData={singleData}></MyBar>)
             }
         </div>
     );
