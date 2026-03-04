@@ -2,22 +2,7 @@ import React from 'react';
 import { Bar, BarChart, CartesianGrid, Legend, Tooltip, XAxis, YAxis } from 'recharts';
 
 const MyBar = ({ singleData }) => {
-    console.log(singleData);
-    // const {name,section,} = singleData
-
-    // const {
-    //     id, name, class: classNam, section,
-
-    //     subjects: {
-    //         Physics, Chemistry, Math, Biology, English
-    //     }
-    // } = singleData;
-
-
-
-
-
-
+    
 
     const chartData = [
         {
@@ -48,10 +33,10 @@ const MyBar = ({ singleData }) => {
             <div>
                 <BarChart width={500} height={300} data={chartData}>
                     <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="subject" />  {/* x-axis label */}
-                    {/* <YAxis />                     y-axis marks */}
-                    <Tooltip />                   {/* hover করলে value দেখাবে */}
-                    <Legend />                    {/* chart legend */}
+                    <XAxis dataKey="subject" />  
+                    <YAxis></YAxis>
+                    <Tooltip></Tooltip>
+                    <Legend></Legend>
                     <Bar dataKey="total" fill="#8884d8" /> {/* bar height = total marks */}
                 </BarChart>
             </div>

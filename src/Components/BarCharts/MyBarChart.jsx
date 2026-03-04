@@ -9,7 +9,7 @@ const MyBarChart = ({promiseDataAxios}) => {
     return (
         <div>
             {
-                myDatas.map(singleData=><MyBar singleData={singleData}></MyBar>)
+                myDatas.map(singleData=><MyBar key={singleData.id} singleData={singleData}></MyBar>)
             }
         </div>
     );
