@@ -1,5 +1,9 @@
 import React from 'react';
 
+const promiseDataFetch = fetch("Students.json")
+.then(res=>res.json())
+console.log(promiseDataFetch);
+
 const App = () => {
   return (
     <div>
